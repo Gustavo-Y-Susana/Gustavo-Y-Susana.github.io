@@ -1402,20 +1402,35 @@
                                         <br> ¡Transferencia Bancaria!
                                         
                                         <div class="elementor-sicon">
-                                            <img src="/images/tarjeta.png" alt="Icono de iglesia">
-                                            <style>
-                                                .elementor-sicon img {
-                width: 100%;
+    <img src="/images/tarjeta.png" alt="Icono de iglesia">
+    <style>
+        .elementor-sicon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* Opcional: limitar ancho para móviles */
+            max-width: 100%;
+            overflow: hidden;
+        }
+
+        .elementor-sicon img {
+            width: 100%;
+            max-width: 180px; /* Ajusta según quieras */
+            height: auto;
+            display: block;
+        }
+
+        /* Estilo específico para móviles */
+        @media screen and (max-width: 768px) {
+            .elementor-sicon img {
+                max-width: 50%; /* Ocupa todo el ancho disponible en móviles */
+                width: auto;
                 height: auto;
-                max-width: 180px;
-                display: block;
-                margin: 0 auto; /* Centrado */
-                margin-left: 67px; /* Mueve a la derecha */
             }
-            
-            
-                                            </style>
-                                        </div>
+        }
+    </style>
+</div>
+
                                         Susana Edith Sahagún Mendoza<br>
                                         <br> CLABE: 002320702087494372 
                                     </h2>
